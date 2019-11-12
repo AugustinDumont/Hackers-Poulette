@@ -13,7 +13,10 @@
 
 <body>
 
-    <?php include('process.php'); ?>
+    <?php include('process.php');
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL); ?>
     <img class="logo" src="hackers-poulette-logo.png" alt="logo Hackers Poulette" width="250px">
     <div class="container">
         <form id="contact" action="<?php $_SERVER['PHP_SELF']; ?>" method="post" autocomplete="off">
